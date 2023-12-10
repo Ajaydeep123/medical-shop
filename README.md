@@ -2,6 +2,9 @@
 
 One stop eCommerce shop for providing medical equipments and products.
 
+## Neo4j Visualization Video
+https://github.com/Ajaydeep123/medical-shop/assets/49810031/5e5b8377-33d0-4a13-8ede-4d3af7f24eca
+
 ## Neo4j Visualization Screenshots
 
 #### Neo4j homepage showing relations of a product node with other nodes:
@@ -12,4 +15,7 @@ One stop eCommerce shop for providing medical equipments and products.
 ![Screenshot 2023-12-10 at 4 36 21 PM](https://github.com/Ajaydeep123/medical-shop/assets/49810031/04188f6c-3cf1-4744-9c76-86ce8be09751)
 #### Manufacturer Nodes
 ![Screenshot 2023-12-10 at 4 36 45 PM](https://github.com/Ajaydeep123/medical-shop/assets/49810031/821ddce3-1a5b-4580-9e51-c47645c11dae)
+
+
+
 
