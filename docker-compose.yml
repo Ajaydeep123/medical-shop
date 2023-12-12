@@ -21,6 +21,8 @@ services:
   # official neo4j doesn't have a docker-compose config so, we are using one from bitname
   # 7474 http port
   # 7687 bolt port
+  # username:neo4j, password: bitnami1 by default
+
   neo4j:
     image: 'bitnami/neo4j:latest'
     ports:

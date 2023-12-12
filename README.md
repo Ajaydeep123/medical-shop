@@ -19,3 +19,9 @@ https://github.com/Ajaydeep123/medical-shop/assets/49810031/5e5b8377-33d0-4a13-8
 
 
 
+## References
+- [Woocommerce REST api](https://woocommerce.github.io/woocommerce-rest-api-docs/?javascript#introduction)
+- [Loading json to neo4j](https://neo4j.com/labs/apoc/4.1/import/load-json/)
+- [Fundamentals of neo4j and cypher](https://graphacademy.neo4j.com/)
+- [Bitnami docker image](https://hub.docker.com/r/bitnami/neo4j)
+- [Docker docs](https://docs.docker.com/)
