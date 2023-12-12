@@ -1,0 +1,58 @@
+version: '3'
+
+# define services
+
+services:
+  db:
+    image: mysql
+    container_name: db
+    restart: always
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "${ROOT_PASSWORD}"
+      MYSQL_DATABASE: "${DB_DATABASE}"
+      MYSQL_USER: "${DB_USER}"
+      MYSQL_PASSWORD: "${DB_PASSWORD}"
+
+    networks:
+      - wordpressdb_net
+  
+  # official neo4j doesn't have a docker-compose config so, we are using one from bitname
+  # 7474 http port
+  # 7687 bolt port
+  neo4j:
+    image: 'bitnami/neo4j:latest'
+    ports:
+      - '7474:7474'
+      - '7687:7687'
+    volumes:
+      - neo4j_data:/bitnami/neo4j/data
+    networks:
+      - wordpressdb_net
+
+  wp:
+    image: wordpress
+    container_name: wp
+    restart: always
+    volumes:
+      - wordpress:/var/www/html
+    ports:
+      - 80:80
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: "${DB_USER}"
+      WORDPRESS_DB_PASSWORD: "${DB_PASSWORD}"
+    depends_on:
+      - db
+    networks:
+      - wordpressdb_net
+
+
+volumes:
+  db_data:
+  wordpress:
+  neo4j_data:
+
+networks:
+  wordpressdb_net:
