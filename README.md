@@ -5,7 +5,7 @@ One stop eCommerce shop for providing medical equipments and products.
 ## Getting Started
 #### Start the services
 - Install docker desktop and docker compose
-- Copy the code from docker-compose.yml file
+- Clone the repository
 - Start docker desktop
 - run the following command:
 ```bash
