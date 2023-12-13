@@ -48,6 +48,25 @@ One stop eCommerce shop for providing medical equipments and products.
 📌 We're setting the network for our new container, same as the network we created during the step 1 of docker-compose up. We want to be able to query to the neo4j container that is already running in the bg. So, being in the same network is crucial to establish communication.
 
 ✅ Our dataloadermonster's container will execute the query, which will populate the neo4j db and exit from the process.
+- we've create a Docker file for this process
+- Steps:
+```bash
+  mkdir backend
+  cd backend
+  npm init -y
+  npm i neo4j-driver dotenv randomstring 
+  touch app.js
+  touch Dockerfile
+  touch .dockerignore
+  copy code from my files to yours
+```
+- With this Dockerfile, we have our image ready and now we need to build it and run a container
+```bash
+  docker build -t backendapi . //builds the image
+  docker run -d --network=smarter-codes_wordpressdb_net backendapi //starts a container with above image.
+```
+
+#### Adding product to the woocommerce store with neo4j db's data using node js
 
 ## Neo4j Visualization Video
 https://github.com/Ajaydeep123/medical-shop/assets/49810031/5e5b8377-33d0-4a13-8ede-4d3af7f24eca
