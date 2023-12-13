@@ -2,7 +2,10 @@
 
 One stop eCommerce shop for providing medical equipments and products.
 
+
 ## Getting Started
+#### Video Guide
+  - [Walkthrough](https://drive.google.com/file/d/18T9BRBusmzUUApdaF7y_c5LIaVPwshqC/view?usp=sharing)
 #### Start the services
 - Install docker desktop and docker compose
 - Clone the repository
