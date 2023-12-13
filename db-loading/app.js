@@ -1,7 +1,4 @@
 import dotenv from 'dotenv';
-
-
-
 import neo4j from 'neo4j-driver';
 // Load environment variables
 dotenv.config();
