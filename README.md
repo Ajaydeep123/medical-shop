@@ -2,7 +2,14 @@
 
 One stop eCommerce shop for providing medical equipments and products.
 
+
 ## Getting Started
+#### Video Guide
+  - [Walkthrough](https://drive.google.com/file/d/18T9BRBusmzUUApdaF7y_c5LIaVPwshqC/view?usp=sharing)
+
+#### Design
+![image](https://github.com/Ajaydeep123/medical-shop/assets/49810031/651fc7de-c302-4c6f-9316-c629ac09226c)
+
 #### Start the services
 - Install docker desktop and docker compose
 - Clone the repository
