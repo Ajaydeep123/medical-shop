@@ -6,14 +6,14 @@ const randomstring = require('randomstring');
 dotenv.config();
 
 const driver = neo4j.driver(
-    'bolt://smarter-codes-neo4j-1:7687',
+    'bolt://localhost:7687',
     neo4j.auth.basic('neo4j','bitnami1'),
   );
 
 const WooCommerce = new WooCommerceRestApi({
-    url: 'http://wp:80', // Your store URL
-    consumerKey: 'ck_4220a4dedd2630cde727b588ead8f5bb8a346e3d', // Your consumer key
-    consumerSecret: 'cs_e63281683a6ae7183d6ed75b960edd9f2cfb797c', // Your consumer secret
+    url: 'http://localhost:80', // Your store URL
+    consumerKey: 'ck_4303cfb7ed6196b04ed1ecb6b367c8840e82407e', // Your consumer key
+    consumerSecret: 'cs_c8b7a59350048f213c1cac1f3ba7a66a363bb1ac', // Your consumer secret
     version: 'wc/v3'
 });
 
