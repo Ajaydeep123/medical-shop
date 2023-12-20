@@ -11,9 +11,9 @@ const driver = neo4j.driver(
   );
 
 const WooCommerce = new WooCommerceRestApi({
-    url: 'http://localhost:80', // Your store URL
-    consumerKey: 'ck_4303cfb7ed6196b04ed1ecb6b367c8840e82407e', // Your consumer key
-    consumerSecret: 'cs_c8b7a59350048f213c1cac1f3ba7a66a363bb1ac', // Your consumer secret
+    url: 'http://localhost', // Your store URL
+    consumerKey: 'ck_46362392ec3c25e2ac515c9ff08d230b3c414807', // Your consumer key
+    consumerSecret: 'cs_7cf4aca98c4c6037bed153256cc913a92a528849', // Your consumer secret
     version: 'wc/v3'
 });
 
@@ -63,6 +63,7 @@ const cypherQuery = `
            filtertype: spec['Filter Type'],
            speed: spec.Speed
          } AS specifications
+  
 `;
 
 const session = driver.session();

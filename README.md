@@ -1,6 +1,8 @@
 # One Stop Medical Shop
 
 One stop eCommerce shop for providing medical equipments and products.
+![Alt text](<Screenshot 2023-12-20 at 11.23.04 PM.png>)
+![Alt text](<Screenshot 2023-12-20 at 11.23.19 PM.png>)
 ![Alt text](<Screenshot 2023-12-19 at 8.22.39 PM.png>)
 
 ## Getting Started
