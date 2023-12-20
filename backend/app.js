@@ -19,17 +19,17 @@ const WooCommerce = new WooCommerceRestApi({
 
 const mapCategoryId = (categoryId) => {
     const categoryMapping = {
-      7162: 16,
-      38628: 17,
-      353765: 18,
-      37475: 19,
-      1537374: 20,
-      25972406: 21,
-      1001221: 22,
-      1412952: 23,
-      37472: 24
+      1537374: 18, //distiller
+      353765: 19, //air/water warmer
+      37475: 20, //glove
+      38628: 21, //cot
+      7162: 22,  //stent
+      25972406: 23, //plug
+      1001221: 24, //icemaker
+      1412952: 25, //canister
+      37472: 26 //gloveliner
     };
-  
+  //15->uncategorized
     return categoryMapping[categoryId] || 15;
   };
 
